@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Telnyajka construct</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/construct.css">
+
+    <!-- THREE JS-->
+    <script type="importmap">
+		{
+			"imports": {
+				"three": "./js/THREE/build/three.module.js"
+			}
+		}
+	</script>  
+</head>
+<body>
+
+<table class="cons_table">
+    <td class="cons_td1">
+        <canvas class="cons_canvas" id = "canvas"></canvas>
+        <script type="module" src="js/script.js"></script>
+    </td>
+    <td class="cons_td2">
+        <div class="cons_label">
+            Цвет
+        </div>
+        <select class="cons_select" id="color_picker">
+            <option value="0" >Сине-белый</option>
+            <option value="1" >Красно-белый</option>
+            <option value="2">Черно-белый</option>
+        </select>
+
+        <div class="cons_label">
+            Размер
+        </div>
+        <button class="cons_button3" id="size_0">s</button>
+        <button class="cons_button3" id="size_1">m</button>
+        <button class="cons_button3" id="size_2">l</button>
+
+        <div class="cons_label">
+            Силуэт
+         </div>
+         <button class="cons_button2" id="tshirt_0">прямой</button>
+         <button class="cons_button2" id="tshirt_1">полуприлегающий</button>
+ 
+        <div class="cons_label">
+           Вырез горловины
+        </div>
+        <button class="cons_button2" id="collar_0">круглый</button>
+        <button class="cons_button2" id="collar_1">v-образный</button>
+
+        <div class="cons_label">
+            Рукав
+         </div>
+         <button class="cons_button4" id="sleeves_0">реглан</button>
+         <button class="cons_button4" id="sleeves_1">рубашечный</button>
+         <button class="cons_button4" id="sleeves_2">длинный</button>
+         <button class="cons_button4" id="sleeves_3">короткий</button>
+
+        <div class="cons_label">
+            Низ изделия
+        </div>
+        <button class="cons_button2" id="bottom_0">прямой</button>
+        <button class="cons_button2" id="bottom_1">фигурный</button>
+
+        <div class="cons_label">
+            Вышивка-аппликация
+        </div>
+        <select class="cons_select" id="print_picker">
+            <option value="0">Чайка</option>
+            <option value="1">Тигр</option>
+            <option value="2">Морская капуста</option>
+        </select>
+        <br>
+        <button class="cons_button3img" id="print_color0"><img src="./assets/app_dark.png"></img></button>
+        <button class="cons_button3img" id="print_color1"><img src="./assets/app_blue.png"></img></button>
+        <button class="cons_button3img" id="print_color2"><img src="./assets/app_red.png" id="thrbutton"></img></button>
+        
+    </td>
+</table>
+</body>
+</html>
